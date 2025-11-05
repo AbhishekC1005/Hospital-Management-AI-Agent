@@ -10,9 +10,11 @@ A sophisticated healthcare analytics and decision support system built on Google
 ## Function Architecture
 The system implements a comprehensive set of functions managed by a central HealthcareDecisionSupportSystem agent:
 
-![Function Architecture](images/function_architecture.png)
+![Google ADK Function Architecture](images/GoogleADK_diagram.png)
 
-*Function Architecture Diagram showing the integration of all system capabilities with the central agent*
+![CrewAI Function Architecture](images/crewai_diagram.png)
+
+*Diagrams: Google ADK (Method 1) and CrewAI (Method 2)*
 
 ## System Architecture
 

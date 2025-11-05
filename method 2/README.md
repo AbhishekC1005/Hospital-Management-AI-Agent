@@ -9,6 +9,10 @@ An advanced healthcare decision support system built on the CrewAI framework, im
 
 ## System Architecture
 
+![CrewAI Function Architecture](images/crewai_diagram.png)
+
+![Google ADK Function Architecture](images/GoogleADK_diagram.png)
+
 ```plaintext
 Healthcare Decision Support System (CrewAI)
 ├── Web Layer (FastAPI)
@@ -74,34 +78,33 @@ Healthcare Decision Support System (CrewAI)
 
 ## Key Features
 
-- **🤖 Intelligent Multi-Agent Collaboration**
+- **Intelligent Multi-Agent Collaboration**
   - CrewAI-powered agent orchestration
   - Role-specific agents for specialized tasks
   - Dynamic task delegation and coordination
 
-- **🧠 Advanced Session Management**
+- **Advanced Session Management**
   - Persistent memory across conversations
   - User preference tracking
   - Context-aware responses
-  - Personalized interaction history
+  - Persistent interaction history
 
-- **📊 Comprehensive Hospital Analytics**
+- **Comprehensive Hospital Analytics**
   - Real-time monitoring of 40+ healthcare metrics
   - Resource utilization tracking
   - Capacity management
   - Staff allocation optimization
 
-- **🗺️ Spatial Intelligence**
+- **Spatial Intelligence**
   - Inter-hospital distance calculations
   - Geographic resource distribution
   - Coverage optimization
   - Network analysis
 
-- **🤝 Collaborative Decision Making**
+- **Collaborative Decision Making**
   - Multi-agent consensus building
   - Cross-validated recommendations
   - Dynamic resource allocation
-  - Real-time adaptation
 
 ## 🚀 Quick Start
 
