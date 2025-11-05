@@ -1,8 +1,12 @@
 # Healthcare Decision Support System
 
-AI-powered healthcare assistant with two implementation approaches: Google ADK and CrewAI.
+A comprehensive healthcare management solution implementing two distinct approaches for intelligent hospital resource optimization and management.
 
-## 📁 Project Structure
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent-green)
+
+## System Overview
 
 This repository contains two different implementations of the same healthcare decision support system:
 

@@ -6,7 +6,38 @@ An intelligent healthcare assistant powered by Google's Agent Development Kit (A
 ![Google ADK](https://img.shields.io/badge/Google%20ADK-Latest-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-## 🌟 Key Features
+## Architecture
+
+```plaintext
+Healthcare Decision Support System (ADK)
+├── Core Components
+│   ├── Data Ingestion Service
+│   │   ├── Hospital Data Processor
+│   │   └── Metrics Validator
+│   │
+│   ├── Analysis Engine
+│   │   ├── Statistical Analyzer
+│   │   ├── Distance Calculator
+│   │   └── Resource Monitor
+│   │
+│   └── Decision Support System
+│       ├── Recommendation Engine
+│       ├── Preference Adapter
+│       └── Knowledge Base
+│
+├── External Services
+│   ├── Google ADK Integration
+│   ├── OpenAI Embeddings
+│   └── MongoDB Vector Store
+│
+└── Interface Layer
+    ├── Web Server
+    ├── API Gateway
+    └── WebSocket Handler
+
+```
+
+## Key Features
 
 - **Multi-Agent Architecture**: Specialized agents for data ingestion, analysis, and decision support
 - **Hospital Data Analysis**: Track 40+ metrics including beds, ICU, ventilators, staff, supplies

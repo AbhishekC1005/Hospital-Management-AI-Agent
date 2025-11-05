@@ -7,7 +7,41 @@ A sophisticated healthcare management system built on CrewAI framework that enab
 ![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-## 🌟 Key Features
+## Architecture
+
+```plaintext
+Healthcare Decision Support System (CrewAI)
+├── Session Management Layer
+│   ├── Context Manager
+│   │   ├── User State Tracker
+│   │   └── Preference Store
+│   │
+│   └── History Service
+│       ├── Interaction Logger
+│       └── Analytics Processor
+│
+├── Agent Network
+│   ├── Coordinator Agent
+│   │   ├── Task Distributor
+│   │   └── Response Aggregator
+│   │
+│   ├── Specialist Agents
+│   │   ├── Data Analysis Agent
+│   │   ├── Resource Manager Agent
+│   │   └── Decision Support Agent
+│   │
+│   └── Communication Bus
+│       ├── Message Router
+│       └── State Synchronizer
+│
+└── Infrastructure Layer
+    ├── FastAPI Server
+    ├── Database Connectors
+    └── Monitoring Service
+
+```
+
+## Key Features
 
 - **🤖 Intelligent Multi-Agent Collaboration**
   - CrewAI-powered agent orchestration
