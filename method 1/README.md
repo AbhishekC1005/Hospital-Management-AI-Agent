@@ -1,8 +1,12 @@
-# Healthcare Decision Support System
+# Healthcare Decision Support System (Google ADK Method)
 
-An intelligent AI-powered healthcare assistant built with Google ADK that analyzes hospital data, calculates distances, and provides data-driven recommendations for resource allocation.
+An intelligent healthcare assistant powered by Google's Agent Development Kit (ADK) that provides comprehensive hospital data analysis and resource optimization recommendations. This system leverages advanced AI capabilities to assist healthcare administrators in making data-driven decisions.
 
-## Features
+![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)
+![Google ADK](https://img.shields.io/badge/Google%20ADK-Latest-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+## 🌟 Key Features
 
 - **Multi-Agent Architecture**: Specialized agents for data ingestion, analysis, and decision support
 - **Hospital Data Analysis**: Track 40+ metrics including beds, ICU, ventilators, staff, supplies
