@@ -12,7 +12,6 @@ The system implements a comprehensive set of functions managed by a central Heal
 
 ![Google ADK Function Architecture](images/GoogleADK_diagram.png)
 
-![CrewAI Function Architecture](images/crewai_diagram.png)
 
 *Diagrams: Google ADK (Method 1) and CrewAI (Method 2)*
 
