@@ -11,7 +11,6 @@ An advanced healthcare decision support system built on the CrewAI framework, im
 
 ![CrewAI Function Architecture](images/crewai_diagram.png)
 
-![Google ADK Function Architecture](images/GoogleADK_diagram.png)
 
 ```plaintext
 Healthcare Decision Support System (CrewAI)
