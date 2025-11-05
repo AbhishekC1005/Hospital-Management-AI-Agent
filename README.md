@@ -56,6 +56,13 @@ Healthcare Decision Support System
 
 ```
 
+## Method 1 - Function Architecture
+The Google ADK implementation uses a centralized agent architecture with specialized functions:
+
+![Method 1 Function Architecture](method%201/images/function_architecture.png)
+
+*Function Architecture Diagram showing the integration of hospital management capabilities in Method 1*
+
 ## Implementation Overview
 
 This repository contains two different implementations of the same healthcare decision support system:

@@ -7,6 +7,13 @@ A sophisticated healthcare analytics and decision support system built on Google
 ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-brightgreen)
 ![OpenAI](https://img.shields.io/badge/OpenAI-Embeddings-orange)
 
+## Function Architecture
+The system implements a comprehensive set of functions managed by a central HealthcareDecisionSupportSystem agent:
+
+![Function Architecture](images/function_architecture.png)
+
+*Function Architecture Diagram showing the integration of all system capabilities with the central agent*
+
 ## System Architecture
 
 ```plaintext
