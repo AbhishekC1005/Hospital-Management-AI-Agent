@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Reception Assistant - CrewAI</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-hospital"></i>
+                    <h1>Hospital Assistant - CrewAI</h1>
+                </div>
+                <div class="status-indicators">
+                    <div class="status-indicator">
+                        <span class="status-dot" id="statusDot"></span>
+                        <span id="statusText">Ready</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="quick-actions">
+                <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="sendQuickQuery('How many hospitals are in the system?')">
+                        <i class="fas fa-chart-bar"></i>
+                        Hospital Count
+                    </button>
+                    <button class="action-btn" onclick="sendQuickQuery('List all hospital names and locations')">
+                        <i class="fas fa-list"></i>
+                        Hospital List
+                    </button>
+                    <button class="action-btn" onclick="sendQuickQuery('What data is available in the system?')">
+                        <i class="fas fa-database"></i>
+                        Available Data
+                    </button>
+                    <button class="action-btn" onclick="sendQuickQuery('Show me the date range of available data')">
+                        <i class="fas fa-calendar"></i>
+                        Date Range
+                    </button>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <i class="fas fa-comments"></i>
+                    <h3>Chat with CrewAI Assistant</h3>
+                    <button class="clear-btn" onclick="clearChat()">
+                        <i class="fas fa-trash"></i>
+                        Clear
+                    </button>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-text">
+                                Hello! I'm your Hospital Reception Assistant powered by CrewAI. I can help you with:
+                                <ul>
+                                    <li>Hospital information and statistics</li>
+                                    <li>Location and distance calculations</li>
+                                    <li>Data analysis and insights</li>
+                                    <li>Strategic recommendations</li>
+                                </ul>
+                                How can I assist you today?
+                            </div>
+                            <div class="message-time" id="welcomeTime"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="messageInput" 
+                            placeholder="Ask about hospitals, data, or get recommendations..."
+                            maxlength="500"
+                        >
+                        <button id="sendButton" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="input-info">
+                        <span class="char-count">
+                            <span id="charCount">0</span>/500
+                        </span>
+                        <span class="tip">
+                            <i class="fas fa-lightbulb"></i>
+                            Powered by CrewAI multi-agent system
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>CrewAI agents are working...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
