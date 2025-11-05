@@ -1,12 +1,62 @@
 # Healthcare Decision Support System
 
-A comprehensive healthcare management solution implementing two distinct approaches for intelligent hospital resource optimization and management.
+A comprehensive healthcare resource optimization platform implementing two distinct artificial intelligence approaches for hospital management and decision support. The system provides real-time analytics, resource tracking, and intelligent recommendations through different agent architectures.
 
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent-green)
+![Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen)
 
-## System Overview
+## System Architecture
+
+```plaintext
+Healthcare Decision Support System
+├── Common Infrastructure
+│   ├── Web Layer
+│   │   ├── FastAPI Server
+│   │   ├── CORS Middleware
+│   │   └── Static File Hosting
+│   │
+│   ├── Data Layer
+│   │   ├── Hospital Metrics Store
+│   │   └── Vector Database (RAG)
+│   │
+│   └── Authentication
+│       └── API Key Management
+│
+├── Method 1 - ADK Implementation
+│   ├── Core Components
+│   │   ├── LLM Agent (Google ADK)
+│   │   └── Session Management
+│   │
+│   ├── Tool Integration
+│   │   ├── Hospital Analytics
+│   │   ├── Preference Management
+│   │   └── RAG Functions
+│   │
+│   └── Features
+│       ├── Hospital Data Analysis
+│       ├── Distance Calculations
+│       └── Resource Tracking
+│
+└── Method 2 - CrewAI Implementation
+    ├── Agent Network
+    │   ├── Analysis Agent
+    │   ├── Resource Agent
+    │   └── Decision Agent
+    │
+    ├── Session Management
+    │   ├── Context Tracking
+    │   └── State Management
+    │
+    └── Features
+        ├── Multi-Agent Collaboration
+        ├── Hospital Comparisons
+        └── Capacity Analysis
+
+```
+
+## Implementation Overview
 
 This repository contains two different implementations of the same healthcare decision support system:
 

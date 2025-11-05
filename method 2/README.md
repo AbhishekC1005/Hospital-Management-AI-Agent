@@ -1,44 +1,75 @@
-# Healthcare Decision Support System (CrewAI Method)
+# Healthcare Decision Support System (CrewAI Implementation)
 
-A sophisticated healthcare management system built on CrewAI framework that enables intelligent multi-agent collaboration for comprehensive hospital resource management. This implementation features advanced session management and personalized interactions.
+An advanced healthcare decision support system built on the CrewAI framework, implementing a multi-agent collaborative approach with specialized agents for different aspects of hospital management. This implementation features persistent session management and agent-specific expertise distribution.
 
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 ![CrewAI](https://img.shields.io/badge/CrewAI-Latest-orange)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-green)
-![License](https://img.shields.io/badge/license-MIT-blue)
+![LangChain](https://img.shields.io/badge/LangChain-OpenAI-green)
+![FastAPI](https://img.shields.io/badge/FastAPI-Latest-brightgreen)
 
-## Architecture
+## System Architecture
 
 ```plaintext
 Healthcare Decision Support System (CrewAI)
-├── Session Management Layer
-│   ├── Context Manager
-│   │   ├── User State Tracker
-│   │   └── Preference Store
+├── Web Layer (FastAPI)
+│   ├── API Endpoints
+│   │   ├── /query - Main interaction point
+│   │   └── /static - Static file serving
+│   └── CORS Configuration
+│
+├── Session Management
+│   ├── Session Manager
+│   │   ├── Context Tracking
+│   │   └── State Persistence
 │   │
-│   └── History Service
-│       ├── Interaction Logger
-│       └── Analytics Processor
+│   └── Environment Variables
+│       └── OpenAI Configuration
 │
 ├── Agent Network
-│   ├── Coordinator Agent
-│   │   ├── Task Distributor
-│   │   └── Response Aggregator
-│   │
-│   ├── Specialist Agents
-│   │   ├── Data Analysis Agent
-│   │   ├── Resource Manager Agent
+│   ├── Specialized Agents
+│   │   ├── Hospital Analysis Agent
+│   │   │   ├── Capacity Analysis
+│   │   │   └── Trend Analysis
+│   │   │
+│   │   ├── Resource Management Agent
+│   │   │   ├── Staff Allocation
+│   │   │   └── Equipment Distribution
+│   │   │
 │   │   └── Decision Support Agent
+│   │       ├── Recommendation Generation
+│   │       └── Strategy Optimization
 │   │
-│   └── Communication Bus
-│       ├── Message Router
-│       └── State Synchronizer
+│   └── Tool Integration
+│       ├── Hospital Tools
+│       │   ├── Basic Analytics
+│       │   │   ├── get_hospital_count_tool()
+│       │   │   ├── get_hospital_names_tool()
+│       │   │   └── get_hospital_details_tool()
+│       │   │
+│       │   ├── Advanced Analytics
+│       │   │   ├── analyze_capacity_trends_tool()
+│       │   │   ├── compare_hospitals_tool()
+│       │   │   └── get_system_statistics_tool()
+│       │   │
+│       │   └── Spatial Analysis
+│       │       ├── calculate_distance_tool()
+│       │       ├── get_all_distances_tool()
+│       │       └── find_nearest_hospital_tool()
+│       │
+│       └── RAG Integration
+│           └── rag_function_tool()
 │
-└── Infrastructure Layer
-    ├── FastAPI Server
-    ├── Database Connectors
-    └── Monitoring Service
-
+├── Data Layer
+│   ├── Hospital Data
+│   │   └── hospital_trends.csv
+│   │
+│   └── RAG System
+│       └── Vector Store
+│
+└── Static Content
+    ├── HTML Interface
+    ├── JavaScript
+    └── CSS Styling
 ```
 
 ## Key Features

@@ -1,40 +1,55 @@
-# Healthcare Decision Support System (Google ADK Method)
+# Healthcare Decision Support System (Google ADK Implementation)
 
-An intelligent healthcare assistant powered by Google's Agent Development Kit (ADK) that provides comprehensive hospital data analysis and resource optimization recommendations. This system leverages advanced AI capabilities to assist healthcare administrators in making data-driven decisions.
+A sophisticated healthcare analytics and decision support system built on Google's Agent Development Kit (ADK). This implementation leverages a single powerful LLM agent with comprehensive tool integration for hospital data analysis, resource optimization, and preference-aware recommendations.
 
 ![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)
 ![Google ADK](https://img.shields.io/badge/Google%20ADK-Latest-green)
-![License](https://img.shields.io/badge/license-MIT-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Latest-brightgreen)
+![OpenAI](https://img.shields.io/badge/OpenAI-Embeddings-orange)
 
-## Architecture
+## System Architecture
 
 ```plaintext
 Healthcare Decision Support System (ADK)
-├── Core Components
-│   ├── Data Ingestion Service
-│   │   ├── Hospital Data Processor
-│   │   └── Metrics Validator
-│   │
-│   ├── Analysis Engine
-│   │   ├── Statistical Analyzer
-│   │   ├── Distance Calculator
-│   │   └── Resource Monitor
-│   │
-│   └── Decision Support System
-│       ├── Recommendation Engine
-│       ├── Preference Adapter
-│       └── Knowledge Base
+├── Web Layer (FastAPI)
+│   ├── HTTP Endpoints
+│   │   ├── /query - Main interaction endpoint
+│   │   └── /static - Static file serving
+│   └── CORS Middleware
 │
-├── External Services
-│   ├── Google ADK Integration
-│   ├── OpenAI Embeddings
-│   └── MongoDB Vector Store
+├── Agent Layer
+│   ├── Root Agent (LlmAgent)
+│   │   ├── Model: GPT-4
+│   │   └── In-Memory Session Service
+│   │
+│   └── Tool Integration
+│       ├── Hospital Analysis Tools
+│       │   ├── get_hospital_count()
+│       │   ├── get_hospital_names()
+│       │   ├── get_hospital_details_by_date()
+│       │   ├── get_column_value()
+│       │   └── get_column_names()
+│       │
+│       ├── Spatial Analysis Tools
+│       │   ├── get_hospital_location()
+│       │   ├── calculate_distance_between_hospitals()
+│       │   └── get_all_hospital_distances()
+│       │
+│       └── Advanced Features
+│           ├── rag_function()
+│           └── get_personalized_recommendation()
 │
-└── Interface Layer
-    ├── Web Server
-    ├── API Gateway
-    └── WebSocket Handler
-
+├── Data Layer
+│   ├── Hospital Data
+│   │   └── hospital_trends.csv
+│   │
+│   └── Vector Store
+│       └── MongoDB (RAG)
+│
+└── Static Content
+    ├── HTML Interface
+    ├── JavaScript
+    └── CSS Styling
 ```
 
 ## Key Features
